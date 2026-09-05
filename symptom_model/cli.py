@@ -1,12 +1,13 @@
+import os
 import joblib
 import pandas as pd
-
 
 # ============================================================
 # CONFIGURATION
 # ============================================================
 
-MODEL_FILE = "symptom_checker_model.joblib"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_FILE = os.path.join(BASE_DIR, "symptom_checker_model.joblib")
 
 
 # ============================================================
