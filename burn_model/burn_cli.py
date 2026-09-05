@@ -19,7 +19,8 @@ CLASS_NAMES = [
     "third_degree"
 ]
 
-WEIGHTS_PATH = "burnModel.weights.h5"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+WEIGHTS_PATH = os.path.join(BASE_DIR, "burnModel.weights.h5")
 
 
 # ============================================================
